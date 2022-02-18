@@ -1,0 +1,28 @@
+body
+{
+    background-color: #6e6e6e;
+    color: white;
+}
+a
+{
+color: #FF5A09;
+}
+#main
+{
+    border-style: none;
+    margin:auto;
+    border-spacing: 5px;
+}
+#main td
+{
+    width: 50px;
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+#main tr.elsosor
+{
+    text-align: center;
+    vertical-align: middle;
+    background-color: #f3843e;
+}
