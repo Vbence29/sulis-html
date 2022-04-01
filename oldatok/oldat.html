@@ -11,9 +11,10 @@
 	<script>
 		function szamol()
 		{
-			let anyag=document.getElementById("oldottAnyag") .value;
-			let anyag=document.getElementById("oldoSzer") .value;
-			document.getElementById("megoldas") . innerHTML=(anyag/ (anyag+szer ) ) *100
+			let anyag=document.getElementById("oldottAnyag") .value*1;
+			let szer=document.getElementById("oldoSzer") .value*1;
+			let eredmeny=( anyag / (anyag+szer) )*100;
+			document.getElementById("megoldas") .innerHTML=eredmeny;
 		}
 	</script>
 	<div id="tartalom">
@@ -40,11 +41,11 @@
 
 		<h2>Feladat</h2>
 		<p>Hány tömegszázalékos az az oldat, amelyben <input type="number" min="0" id="oldottAnyag">  g sót feloldunk <input type="number" min="0" id="oldoSzer"> g vízben?</p>
-		<input type="button" value="Számol" onclick="">
+		<input type="button" value="Számol" onclick="szamol()">
 		<p>Eredmény: <span id="megoldas">?</span> m/m%</p>
 
 
-		<p><a href="https://hu.wikipedia.org/wiki/Oldat" target="blank">Wikipedia-oldat></a></p>
+		<p><a href="https://hu.wikipedia.org/wiki/Oldat" target="blank" id="forras"><Wikipedia-oldat></a></p>
 	</div>
 </body>
 
